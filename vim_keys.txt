@@ -1,0 +1,517 @@
+
+
+E471: Argument required
+
+
+n  K           *@<Lua function 186>
+                 Show hover
+	Last set from Lua
+n  gs          *@<Lua function 189>
+                 show signature help
+	Last set from Lua
+n  gr          *@<Lua function 188>
+                 Goto references
+	Last set from Lua
+n  gp          *@<Lua function 187>
+                 Peek definition
+	Last set from Lua
+n  gl          *@<Lua function 49>
+                 Show line diagnostics
+	Last set from Lua
+n  gD          *@<Lua function 79>
+                 Goto declaration
+	Last set from Lua
+n  gd          *@<Lua function 176>
+                 Goto Definition
+	Last set from Lua
+n  gI          *@<Lua function 177>
+                 Goto Implementation
+	Last set from Lua
+n  <C-H>       * <C-W>h
+	Last set from Lua
+s  <Tab>       * <Cmd>call v:lua.cmp.utils.keymap.set_map(7)<CR>
+	Last set from Lua
+n  <NL>        * <C-W>j
+	Last set from Lua
+n  <C-K>       * <C-W>k
+	Last set from Lua
+n  <C-L>       * <C-W>l
+	Last set from Lua
+n  <C-Q>       * :q<CR>
+	Last set from Lua
+n  <C-S>       * :w<CR>
+	Last set from Lua
+n  <C-T>       * <Cmd>execute v:count . "ToggleTerm"<CR>
+	Last set from Lua
+v  <C-_>       * <Esc><Cmd>lua require('Comment.api').toggle_current_linewise()<CR>
+	Last set from Lua
+n  <C-_>       * <Cmd>lua require('Comment.api').toggle_current_linewise()<CR>
+	Last set from Lua
+n  <Space>TÞ   * <Nop>
+	Last set from Lua
+n  <Space>lpÞ  * <Nop>
+	Last set from Lua
+n  <Space>lÞ   * <Nop>
+	Last set from Lua
+n  <Space>sÞ   * <Nop>
+	Last set from Lua
+n  <Space>LlÞ  * <Nop>
+	Last set from Lua
+n  <Space>LÞ   * <Nop>
+	Last set from Lua
+n  <Space>bÞ   * <Nop>
+	Last set from Lua
+n  <Space>pÞ   * <Nop>
+	Last set from Lua
+n  <Space>gÞ   * <Nop>
+	Last set from Lua
+n  <Space>Þ    * <Nop>
+	Last set from Lua
+n  <Space>     * <Cmd>lua require("which-key").show(" ", {mode = "n", auto = true})<CR>
+	Last set from Lua
+x  <Space>Þ    * <Nop>
+	Last set from Lua
+x  <Space>     * <Cmd>lua require("which-key").show(" ", {mode = "v", auto = true})<CR>
+	Last set from Lua
+v  <Space>/    * <Esc><Cmd>lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())<CR>
+                  Comment
+	Last set from Lua
+n  <Space>c    * <Cmd>BufferKill<CR>
+                  Close Buffer
+	Last set from Lua
+n  <Space>Ti   * :TSConfigInfo<CR>
+                 Treesitter Info
+	Last set from Lua
+n  <Space>f    * <Cmd>lua require("which-key").execute(7)<CR>
+                  Find File
+	Last set from Lua
+n  <Space>li   * <Cmd>LspInfo<CR>
+                 LSP Info
+	Last set from Lua
+n  <Space>ld   * <Cmd>Telescope diagnostics bufnr=0 theme=get_ivy<CR>
+                 LSP Buffer Diagnostics
+	Last set from Lua
+n  <Space>lj   * <Cmd>lua require("which-key").execute(6)<CR>
+                 LSP Next Diagnostic
+	Last set from Lua
+n  <Space>lf   * <Cmd>lua require("which-key").execute(5)<CR>
+                 LSP Format
+	Last set from Lua
+n  <Space>le   * <Cmd>Telescope quickfix<CR>
+                 LSP Telescope Quickfix
+	Last set from Lua
+n  <Space>lI   * <Cmd>LspInstallInfo<CR>
+                 LSP Installer Info
+	Last set from Lua
+n  <Space>lq   * <Cmd>lua require("which-key").execute(4)<CR>
+                 LSP Quickfix
+	Last set from Lua
+n  <Space>ll   * <Cmd>lua require("which-key").execute(3)<CR>
+                 LSP CodeLens Action
+	Last set from Lua
+n  <Space>ls   * <Cmd>Telescope lsp_document_symbols<CR>
+                 LSP Document Symbols
+	Last set from Lua
+n  <Space>lS   * <Cmd>Telescope lsp_dynamic_workspace_symbols<CR>
+                 LSP Workspace Symbols
+	Last set from Lua
+n  <Space>lpi  * <Cmd>lua require('lvim.lsp.peek').Peek('implementation')<CR>
+                 Peek Implementation
+	Last set from Lua
+n  <Space>lpd  * <Cmd>lua require('lvim.lsp.peek').Peek('definition')<CR>
+                 Peek Definition
+	Last set from Lua
+n  <Space>lpt  * <Cmd>lua require('lvim.lsp.peek').Peek('typeDefinition')<CR>
+                 Peek Type Definition
+	Last set from Lua
+n  <Space>lk   * <Cmd>lua require("which-key").execute(2)<CR>
+                 LSP Prev Diagnostic
+	Last set from Lua
+n  <Space>lw   * <Cmd>Telescope diagnostics<CR>
+                 LSP Diagnostics
+	Last set from Lua
+n  <Space>la   * <Cmd>lua vim.lsp.buf.code_action()<CR>
+                 LSP Code Action
+	Last set from Lua
+n  <Space>lr   * <Cmd>lua require("which-key").execute(1)<CR>
+                 LSP Rename
+	Last set from Lua
+n  <Space>e    * <Cmd>NvimTreeToggle<CR>
+                  Explorer
+	Last set from Lua
+n  <Space>/    * <Cmd>lua require('Comment.api').toggle_current_linewise()<CR>
+                  Comment
+	Last set from Lua
+n  <Space>;    * <Cmd>Alpha<CR>
+                  Dashboard
+	Last set from Lua
+n  <Space>q    * <Cmd>lua require('lvim.utils.functions').smart_quit()<CR>
+                  Quit
+	Last set from Lua
+n  <Space>sc   * <Cmd>Telescope colorscheme<CR>
+                 Search Colorscheme
+	Last set from Lua
+n  <Space>sH   * <Cmd>Telescope highlights<CR>
+                 Search Find highlight groups
+	Last set from Lua
+n  <Space>sf   * <Cmd>Telescope find_files<CR>
+                 Search Find File
+	Last set from Lua
+n  <Space>st   * <Cmd>Telescope live_grep<CR>
+                 Search Text
+	Last set from Lua
+n  <Space>sC   * <Cmd>Telescope commands<CR>
+                 Search Commands
+	Last set from Lua
+n  <Space>sb   * <Cmd>Telescope git_branches<CR>
+                 Search Checkout branch
+	Last set from Lua
+n  <Space>sk   * <Cmd>Telescope keymaps<CR>
+                 Search Keymaps
+	Last set from Lua
+n  <Space>sR   * <Cmd>Telescope registers<CR>
+                 Search Registers
+	Last set from Lua
+n  <Space>sM   * <Cmd>Telescope man_pages<CR>
+                 Search Man Pages
+	Last set from Lua
+n  <Space>sp   * <Cmd>lua require('telescope.builtin.internal').colorscheme({enable_preview = true})<CR>
+                 Search Colorscheme with Preview
+	Last set from Lua
+n  <Space>sh   * <Cmd>Telescope help_tags<CR>
+                 Search Find Help
+	Last set from Lua
+n  <Space>sr   * <Cmd>Telescope oldfiles<CR>
+                 Search Open Recent File
+	Last set from Lua
+n  <Space>Lc   * <Cmd>edit /home/drift/.config/lvim/config.lua<CR>
+                 +LunarVim Edit config.lua
+	Last set from Lua
+n  <Space>Ln   * <Cmd>Telescope notify<CR>
+                 +LunarVim View Notifications
+	Last set from Lua
+n  <Space>Lf   * <Cmd>lua require('lvim.core.telescope.custom-finders').find_lunarvim_files()<CR>
+                 +LunarVim Find LunarVim files
+	Last set from Lua
+n  <Space>Lu   * <Cmd>LvimUpdate<CR>
+                 +LunarVim Update LunarVim
+	Last set from Lua
+n  <Space>LI   * <Cmd>lua require('lvim.core.telescope.custom-finders').view_lunarvim_changelog()<CR>
+                 +LunarVim View LunarVim's changelog
+	Last set from Lua
+n  <Space>Lln  * <Cmd>lua require('lvim.core.terminal').toggle_log_view(os.getenv('NVIM_LOG_FILE'))<CR>
+                 +logs view neovim log
+	Last set from Lua
+n  <Space>LlP  * <Cmd>edit $LUNARVIM_CACHE_DIR/packer.nvim.log<CR>
+                 +logs Open the Packer logfile
+	Last set from Lua
+n  <Space>Lld  * <Cmd>lua require('lvim.core.terminal').toggle_log_view(require('lvim.core.log').get_path())<CR>
+                 +logs view default log
+	Last set from Lua
+n  <Space>LlN  * <Cmd>edit $NVIM_LOG_FILE<CR>
+                 +logs Open the Neovim logfile
+	Last set from Lua
+n  <Space>Lll  * <Cmd>lua require('lvim.core.terminal').toggle_log_view(vim.lsp.get_log_path())<CR>
+                 +logs view lsp log
+	Last set from Lua
+n  <Space>Llp  * <Cmd>lua require('lvim.core.terminal').toggle_log_view(get_cache_dir() .. '/packer.nvim.log')<CR>
+                 +logs view packer log
+	Last set from Lua
+n  <Space>LlD  * <Cmd>lua vim.fn.execute('edit ' .. require('lvim.core.log').get_path())<CR>
+                 +logs Open the default logfile
+	Last set from Lua
+n  <Space>LlL  * <Cmd>lua vim.fn.execute('edit ' .. vim.lsp.get_log_path())<CR>
+                 +logs Open the LSP logfile
+	Last set from Lua
+n  <Space>Lg   * <Cmd>lua require('lvim.core.telescope.custom-finders').grep_lunarvim_files()<CR>
+                 +LunarVim Grep LunarVim files
+	Last set from Lua
+n  <Space>Li   * <Cmd>lua require('lvim.core.info').toggle_popup(vim.bo.filetype)<CR>
+                 +LunarVim Toggle LunarVim Info
+	Last set from Lua
+n  <Space>Lk   * <Cmd>Telescope keymaps<CR>
+                 +LunarVim View LunarVim's keymappings
+	Last set from Lua
+n  <Space>Lr   * <Cmd>LvimReload<CR>
+                 +LunarVim Reload LunarVim's configuration
+	Last set from Lua
+n  <Space>bb   * <Cmd>BufferLineCyclePrev<CR>
+                 Buffers Previous
+	Last set from Lua
+n  <Space>bj   * <Cmd>BufferLinePick<CR>
+                 Buffers Jump
+	Last set from Lua
+n  <Space>bf   * <Cmd>Telescope buffers<CR>
+                 Buffers Find
+	Last set from Lua
+n  <Space>bL   * <Cmd>BufferLineSortByExtension<CR>
+                 Buffers Sort by language
+	Last set from Lua
+n  <Space>be   * <Cmd>BufferLinePickClose<CR>
+                 Buffers Pick which buffer to close
+	Last set from Lua
+n  <Space>bl   * <Cmd>BufferLineCloseRight<CR>
+                 Buffers Close all to the right
+	Last set from Lua
+n  <Space>bD   * <Cmd>BufferLineSortByDirectory<CR>
+                 Buffers Sort by directory
+	Last set from Lua
+n  <Space>bh   * <Cmd>BufferLineCloseLeft<CR>
+                 Buffers Close all to the left
+	Last set from Lua
+n  <Space>pc   * <Cmd>PackerCompile<CR>
+                 Packer Compile
+	Last set from Lua
+n  <Space>ps   * <Cmd>PackerSync<CR>
+                 Packer Sync
+	Last set from Lua
+n  <Space>pS   * <Cmd>PackerStatus<CR>
+                 Packer Status
+	Last set from Lua
+n  <Space>pu   * <Cmd>PackerUpdate<CR>
+                 Packer Update
+	Last set from Lua
+n  <Space>pi   * <Cmd>PackerInstall<CR>
+                 Packer Install
+	Last set from Lua
+n  <Space>pr   * <Cmd>lua require('lvim.plugin-loader').recompile()<CR>
+                 Packer Re-compile
+	Last set from Lua
+n  <Space>gu   * <Cmd>lua require 'gitsigns'.undo_stage_hunk()<CR>
+                 Git Undo Stage Hunk
+	Last set from Lua
+n  <Space>gj   * <Cmd>lua require 'gitsigns'.next_hunk()<CR>
+                 Git Next Hunk
+	Last set from Lua
+n  <Space>gR   * <Cmd>lua require 'gitsigns'.reset_buffer()<CR>
+                 Git Reset Buffer
+	Last set from Lua
+n  <Space>gb   * <Cmd>Telescope git_branches<CR>
+                 Git Checkout branch
+	Last set from Lua
+n  <Space>gc   * <Cmd>Telescope git_commits<CR>
+                 Git Checkout commit
+	Last set from Lua
+n  <Space>gC   * <Cmd>Telescope git_bcommits<CR>
+                 Git Checkout commit(for current file)
+	Last set from Lua
+n  <Space>gd   * <Cmd>Gitsigns diffthis HEAD<CR>
+                 Git Git Diff
+	Last set from Lua
+n  <Space>gl   * <Cmd>lua require 'gitsigns'.blame_line()<CR>
+                 Git Blame
+	Last set from Lua
+n  <Space>gs   * <Cmd>lua require 'gitsigns'.stage_hunk()<CR>
+                 Git Stage Hunk
+	Last set from Lua
+n  <Space>gp   * <Cmd>lua require 'gitsigns'.preview_hunk()<CR>
+                 Git Preview Hunk
+	Last set from Lua
+n  <Space>go   * <Cmd>Telescope git_status<CR>
+                 Git Open changed file
+	Last set from Lua
+n  <Space>gk   * <Cmd>lua require 'gitsigns'.prev_hunk()<CR>
+                 Git Prev Hunk
+	Last set from Lua
+n  <Space>gr   * <Cmd>lua require 'gitsigns'.reset_hunk()<CR>
+                 Git Reset Hunk
+	Last set from Lua
+n  <Space>w    * <Cmd>w!<CR>
+                  Save
+	Last set from Lua
+n  <Space>h    * <Cmd>nohlsearch<CR>
+                  No Highlight
+	Last set from Lua
+n  "           * <Cmd>lua require("which-key").show("\"", {mode = "n", auto = true})<CR>
+	Last set from Lua
+o  %             <Plug>(MatchitOperationForward)
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 73
+x  %             <Plug>(MatchitVisualForward)
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 71
+n  %             <Plug>(MatchitNormalForward)
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 69
+n  '           * <Cmd>lua require("which-key").show("'", {mode = "n", auto = true})<CR>
+	Last set from Lua
+v  <           * <gv
+	Last set from Lua
+v  >           * >gv
+	Last set from Lua
+n  @Þ          * <Nop>
+	Last set from Lua
+n  @           * <Cmd>lua require("which-key").show("@", {mode = "n", auto = true})<CR>
+	Last set from Lua
+n  H           * :BufferLineCyclePrev<CR>
+	Last set from Lua
+x  J           * :move '>+1<CR>gv-gv
+	Last set from Lua
+x  K           * :move '<-2<CR>gv-gv
+	Last set from Lua
+n  L           * :BufferLineCycleNext<CR>
+	Last set from Lua
+n  Y           * y$
+n  [Þ          * <Nop>
+	Last set from Lua
+n  [           * <Cmd>lua require("which-key").show("[", {mode = "n", auto = true})<CR>
+	Last set from Lua
+x  [Þ          * <Nop>
+	Last set from Lua
+x  [           * <Cmd>lua require("which-key").show("[", {mode = "v", auto = true})<CR>
+	Last set from Lua
+o  [%            <Plug>(MatchitOperationMultiBackward)
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 81
+x  [%            <Plug>(MatchitVisualMultiBackward)
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 79
+n  [%            <Plug>(MatchitNormalMultiBackward)
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 77
+n  [q          * :cprev<CR>
+	Last set from Lua
+n  ]Þ          * <Nop>
+	Last set from Lua
+n  ]           * <Cmd>lua require("which-key").show("]", {mode = "n", auto = true})<CR>
+	Last set from Lua
+x  ]Þ          * <Nop>
+	Last set from Lua
+x  ]           * <Cmd>lua require("which-key").show("]", {mode = "v", auto = true})<CR>
+	Last set from Lua
+o  ]%            <Plug>(MatchitOperationMultiForward)
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 82
+x  ]%            <Plug>(MatchitVisualMultiForward)
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 80
+n  ]%            <Plug>(MatchitNormalMultiForward)
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 78
+n  ]q          * :cnext<CR>
+	Last set from Lua
+n  `           * <Cmd>lua require("which-key").show("`", {mode = "n", auto = true})<CR>
+	Last set from Lua
+x  aÞ          * <Nop>
+	Last set from Lua
+x  a           * <Cmd>lua require("which-key").show("a", {mode = "v", auto = true})<CR>
+	Last set from Lua
+x  a%            <Plug>(MatchitVisualTextObject)
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 85
+n  gÞ          * <Nop>
+	Last set from Lua
+n  g           * <Cmd>lua require("which-key").show("g", {mode = "n", auto = true})<CR>
+	Last set from Lua
+x  gÞ          * <Nop>
+	Last set from Lua
+x  g           * <Cmd>lua require("which-key").show("g", {mode = "v", auto = true})<CR>
+	Last set from Lua
+n  gcA         * <Cmd>lua require("Comment.api").locked.insert_linewise_eol()<CR>
+	Last set from Lua
+n  gcO         * <Cmd>lua require("Comment.api").locked.insert_linewise_above()<CR>
+	Last set from Lua
+n  gco         * <Cmd>lua require("Comment.api").locked.insert_linewise_below()<CR>
+	Last set from Lua
+x  gb          * <Plug>(comment_toggle_blockwise_visual)
+	Last set from Lua
+x  gc          * <Plug>(comment_toggle_linewise_visual)
+	Last set from Lua
+n  gb          * <Plug>(comment_toggle_blockwise)
+	Last set from Lua
+n  gc          * <Plug>(comment_toggle_linewise)
+	Last set from Lua
+n  gbc           v:count == 0 ? '<Plug>(comment_toggle_current_blockwise)' : '<Plug>(comment_toggle_blockwise_count)'
+	Last set from Lua
+n  gcc           v:count == 0 ? '<Plug>(comment_toggle_current_linewise)' : '<Plug>(comment_toggle_linewise_count)'
+	Last set from Lua
+x  gx            <Plug>NetrwBrowseXVis
+	Last set from /usr/share/nvim/runtime/plugin/netrwPlugin.vim line 88
+n  gx            <Plug>NetrwBrowseX
+	Last set from /usr/share/nvim/runtime/plugin/netrwPlugin.vim line 82
+o  g%            <Plug>(MatchitOperationBackward)
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 74
+x  g%            <Plug>(MatchitVisualBackward)
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 72
+n  g%            <Plug>(MatchitNormalBackward)
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 70
+x  iÞ          * <Nop>
+	Last set from Lua
+x  i           * <Cmd>lua require("which-key").show("i", {mode = "v", auto = true})<CR>
+	Last set from Lua
+n  zÞ          * <Nop>
+	Last set from Lua
+n  z           * <Cmd>lua require("which-key").show("z", {mode = "n", auto = true})<CR>
+	Last set from Lua
+s  <S-Tab>     * <Cmd>call v:lua.cmp.utils.keymap.set_map(9)<CR>
+	Last set from Lua
+x  <Plug>(comment_toggle_blockwise_visual) * <Esc><Cmd>lua require("Comment.api").locked.toggle_blockwise_op(vim.fn.visualmode())<CR>
+	Last set from Lua
+x  <Plug>(comment_toggle_linewise_visual) * <Esc><Cmd>lua require("Comment.api").locked.toggle_linewise_op(vim.fn.visualmode())<CR>
+	Last set from Lua
+n  <Plug>(comment_toggle_blockwise) * <Cmd>lua require("Comment.api").call("toggle_blockwise_op")<CR>g@
+	Last set from Lua
+n  <Plug>(comment_toggle_linewise) * <Cmd>lua require("Comment.api").call("toggle_linewise_op")<CR>g@
+	Last set from Lua
+n  <Plug>(comment_toggle_current_blockwise) * <Cmd>lua require("Comment.api").call("toggle_current_blockwise_op")<CR>g@$
+	Last set from Lua
+n  <Plug>(comment_toggle_current_linewise) * <Cmd>lua require("Comment.api").call("toggle_current_linewise_op")<CR>g@$
+	Last set from Lua
+n  <Plug>(comment_toggle_blockwise_count) * <Cmd>lua require("Comment.api").call("toggle_blockwise_count_op")<CR>g@$
+	Last set from Lua
+n  <Plug>(comment_toggle_linewise_count) * <Cmd>lua require("Comment.api").call("toggle_linewise_count_op")<CR>g@$
+	Last set from Lua
+n  <Plug>PlenaryTestFile * :lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))<CR>
+	Last set from ~/.local/share/lunarvim/site/pack/packer/start/plenary.nvim/plugin/plenary.vim line 9
+s  <Plug>luasnip-jump-prev * <Cmd>lua require'luasnip'.jump(-1)<CR>
+	Last set from ~/.local/share/lunarvim/site/pack/packer/start/LuaSnip/plugin/luasnip.vim line 19
+s  <Plug>luasnip-jump-next * <Cmd>lua require'luasnip'.jump(1)<CR>
+	Last set from ~/.local/share/lunarvim/site/pack/packer/start/LuaSnip/plugin/luasnip.vim line 18
+s  <Plug>luasnip-prev-choice * <Cmd>lua require'luasnip'.change_choice(-1)<CR>
+	Last set from ~/.local/share/lunarvim/site/pack/packer/start/LuaSnip/plugin/luasnip.vim line 17
+s  <Plug>luasnip-next-choice * <Cmd>lua require'luasnip'.change_choice(1)<CR>
+	Last set from ~/.local/share/lunarvim/site/pack/packer/start/LuaSnip/plugin/luasnip.vim line 16
+s  <Plug>luasnip-expand-snippet * <Cmd>lua require'luasnip'.expand()<CR>
+	Last set from ~/.local/share/lunarvim/site/pack/packer/start/LuaSnip/plugin/luasnip.vim line 15
+s  <Plug>luasnip-expand-or-jump * <Cmd>lua require'luasnip'.expand_or_jump()<CR>
+	Last set from ~/.local/share/lunarvim/site/pack/packer/start/LuaSnip/plugin/luasnip.vim line 14
+   <Plug>luasnip-expand-repeat * <Cmd>lua require'luasnip'.expand_repeat()<CR>
+	Last set from ~/.local/share/lunarvim/site/pack/packer/start/LuaSnip/plugin/luasnip.vim line 11
+   <Plug>luasnip-delete-check * <Cmd>lua require'luasnip'.unlink_current_if_deleted()<CR>
+	Last set from ~/.local/share/lunarvim/site/pack/packer/start/LuaSnip/plugin/luasnip.vim line 8
+x  <Plug>NetrwBrowseXVis * :<C-U>call netrw#BrowseXVis()<CR>
+	Last set from /usr/share/nvim/runtime/plugin/netrwPlugin.vim line 90
+n  <Plug>NetrwBrowseX * :call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))<CR>
+	Last set from /usr/share/nvim/runtime/plugin/netrwPlugin.vim line 84
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 66
+o  <Plug>(MatchitOperationMultiForward) * :<C-U>call matchit#MultiMatch("W",  "o")<CR>
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 63
+o  <Plug>(MatchitOperationMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "o")<CR>
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 62
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 61
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 60
+n  <Plug>(MatchitNormalMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 59
+n  <Plug>(MatchitNormalMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 58
+o  <Plug>(MatchitOperationBackward) * :<C-U>call matchit#Match_wrapper('',0,'o')<CR>
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 55
+o  <Plug>(MatchitOperationForward) * :<C-U>call matchit#Match_wrapper('',1,'o')<CR>
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 54
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 53
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 51
+n  <Plug>(MatchitNormalBackward) * :<C-U>call matchit#Match_wrapper('',0,'n')<CR>
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 50
+n  <Plug>(MatchitNormalForward) * :<C-U>call matchit#Match_wrapper('',1,'n')<CR>
+	Last set from /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 49
+x  <M-k>       * :m '<-2<CR>gv-gv
+	Last set from Lua
+x  <M-j>       * :m '>+1<CR>gv-gv
+	Last set from Lua
+n  <M-j>       * :m .+1<CR>==
+	Last set from Lua
+n  <M-k>       * :m .-2<CR>==
+	Last set from Lua
+n  <C-Right>   * :vertical resize +2<CR>
+	Last set from Lua
+n  <C-Left>    * :vertical resize -2<CR>
+	Last set from Lua
+n  <C-Down>    * :resize +2<CR>
+	Last set from Lua
+n  <C-Up>      * :resize -2<CR>
+	Last set from Lua
