@@ -13,7 +13,7 @@
 --   end,
 -- })
 
-local name = "TestRun"
-local command = "echo 'test run!!'"
-local opts = {}
-vim.api.nvim_create_user_command(name, command, opts)
+-- local name = "TestRun"
+-- local command = "echo 'test run!!'"
+-- local opts = {}
+-- vim.api.nvim_create_user_command(name, command, opts)
