@@ -3,7 +3,7 @@ lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
-lvim.builtin.terminal.direction = 'horizontal'
+lvim.builtin.terminal.direction = "horizontal"
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 lvim.builtin.nvimtree.setup.view.adaptive_size = true
@@ -14,13 +14,11 @@ lvim.builtin.treesitter.ensure_installed = {
   "lua",
   "python",
   "css",
-  "yaml",
+  "yaml"
 }
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
 lvim.builtin.treesitter.rainbow.enable = true
-
-
 
 -- ########## User Plugins ##########
 lvim.plugins = {
