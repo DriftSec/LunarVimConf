@@ -1,11 +1,11 @@
 -- ########## keymappings ##########
 lvim.leader = "space"
-
+--a
 -- save/quit
-lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
-lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
-lvim.keys.insert_mode["<C-s>"] = "<Esc>:w<cr>"
-
+lvim.keys.normal_mode["<C-q>"] = "<cmd>q<cr>"
+lvim.keys.normal_mode["<A-q>"] = "<cmd>wqa<cr>"
+lvim.keys.normal_mode["<C-s>"] = "<cmd>wa<cr>"
+lvim.keys.insert_mode["<C-s>"] = "<Esc>:wa<cr>"
 
 -- comments
 lvim.keys.normal_mode["<C-_>"] = "<cmd>lua require('Comment.api').toggle_current_linewise()<CR>"
@@ -18,21 +18,24 @@ lvim.keys.normal_mode["<C-h>"] = "<cmd>lua vim.lsp.buf.hover()<cr>"
 lvim.keys.insert_mode["<C-h>"] = false
 lvim.keys.insert_mode["<C-h>"] = "<cmd>lua vim.lsp.buf.hover()<cr>"
 
-
 -- Telescope
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
 -- symbols outline on right side
 lvim.builtin.which_key.mappings["l"].o = { "<cmd>SymbolsOutline<CR>", "Symbols Outline" }
 
+--
+lvim.keys.normal_mode["<C-f>"] = false
+lvim.keys.normal_mode["<C-f>"] = ""
+
 
 --  Icon Picker
--- lvim.builtin.which_key.mappings["I"] = {
---   name = "+Icons",
---   n = { "<cmd>IconPickerNormal alt_font symbols nerd_font emoji<cr>", "Normal" },
---   y = { "<cmd>IconPickerYank alt_font symbols nerd_font emoji<cr>", "Yank" },
---   i = { "<cmd>IconPickerInsert alt_font symbols nerd_font emoji<cr>", "Insert" },
--- }
+lvim.builtin.which_key.mappings["I"] = {
+  name = "+Icons",
+  n = { "<cmd>IconPickerNormal alt_font symbols nerd_font emoji<cr>", "Normal" },
+  y = { "<cmd>IconPickerYank alt_font symbols nerd_font emoji<cr>", "Yank" },
+  i = { "<cmd>IconPickerInsert alt_font symbols nerd_font emoji<cr>", "Insert" },
+}
 
 -- -- Trouble
 -- lvim.builtin.which_key.mappings["t"] = {

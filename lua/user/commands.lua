@@ -1,10 +1,4 @@
 -- ########## autocmds ##########
--- Autocommands (https://neovim.io/doc/user/autocmd.html)
--- vim.api.nvim_create_autocmd("BufEnter", {
---   pattern = { "*.json", "*.jsonc" },
---   -- enable wrap mode for json files only
---   command = "setlocal wrap",
--- }e
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "zsh",
   callback = function()
@@ -13,7 +7,6 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
-
 -- just playing
 -- local name = "TestRun"
 -- local command = function()
@@ -21,7 +14,7 @@ vim.api.nvim_create_autocmd("FileType", {
 --     prompt = "Search",
 --     telescope = require("telescope.themes").get_cursor(),
 --   }, function(selected) end)
---   vim.cmd(":let @/='local'<cr>")
+--   vim.cmd("vimgrep /local<cr>")
 --   print("aaa")
 -- end
 -- local opts = {}
