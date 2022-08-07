@@ -3,7 +3,7 @@ local M = {}
 M.config = function()
   local c = require('vscode.colors')
   require('vscode').setup({
-    transparent = true,
+    transparent = false,
     italic_comments = true,
     disable_nvimtree_bg = false,
     color_overrides = {

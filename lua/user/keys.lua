@@ -6,21 +6,33 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
 lvim.keys.insert_mode["<C-s>"] = "<Esc>:w<cr>"
 
+
 -- comments
 lvim.keys.normal_mode["<C-_>"] = "<cmd>lua require('Comment.api').toggle_current_linewise()<CR>"
 lvim.keys.insert_mode["<C-_>"] = "<cmd>lua require('Comment.api').toggle_current_linewise()<CR>"
 lvim.keys.visual_mode["<C-_>"] = "<Esc><Cmd>lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())<CR>"
 
+-- hover
+lvim.keys.normal_mode["<C-h>"] = false
+lvim.keys.normal_mode["<C-h>"] = "<cmd>lua vim.lsp.buf.hover()<cr>"
+lvim.keys.insert_mode["<C-h>"] = false
+lvim.keys.insert_mode["<C-h>"] = "<cmd>lua vim.lsp.buf.hover()<cr>"
+
+
 -- Telescope
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
+-- symbols outline on right side
+lvim.builtin.which_key.mappings["l"].o = { "<cmd>SymbolsOutline<CR>", "Symbols Outline" }
+
+
 --  Icon Picker
-lvim.builtin.which_key.mappings["I"] = {
-  name = "+Icons",
-  n = { "<cmd>IconPickerNormal alt_font symbols nerd_font emoji<cr>", "Normal" },
-  y = { "<cmd>IconPickerYank alt_font symbols nerd_font emoji<cr>", "Yank" },
-  i = { "<cmd>IconPickerInsert alt_font symbols nerd_font emoji<cr>", "Insert" },
-}
+-- lvim.builtin.which_key.mappings["I"] = {
+--   name = "+Icons",
+--   n = { "<cmd>IconPickerNormal alt_font symbols nerd_font emoji<cr>", "Normal" },
+--   y = { "<cmd>IconPickerYank alt_font symbols nerd_font emoji<cr>", "Yank" },
+--   i = { "<cmd>IconPickerInsert alt_font symbols nerd_font emoji<cr>", "Insert" },
+-- }
 
 -- -- Trouble
 -- lvim.builtin.which_key.mappings["t"] = {
@@ -34,9 +46,9 @@ lvim.builtin.which_key.mappings["I"] = {
 -- }
 
 -- spectre
-lvim.builtin.which_key.mappings["r"] = {
-  name = "Replace",
-  r = { "<cmd>lua require('spectre').open()<cr>", "Replace" },
-  w = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", "Replace Word" },
-  f = { "<cmd>lua require('spectre').open_file_search()<cr>", "Replace Buffer" },
-}
+-- lvim.builtin.which_key.mappings["r"] = {
+--   name = "Replace",
+--   r = { "<cmd>lua require('spectre').open()<cr>", "Replace" },
+--   w = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", "Replace Word" },
+--   f = { "<cmd>lua require('spectre').open_file_search()<cr>", "Replace Buffer" },
+-- }

@@ -22,39 +22,25 @@ lvim.builtin.treesitter.rainbow.enable = true
 
 -- ########## User Plugins ##########
 lvim.plugins = {
-  { "Mofiqul/vscode.nvim", config = function()
-    require("user.configs.vscode")
-  end,
-  },
-  { "windwp/nvim-spectre",
-    event = "BufRead",
-    config = function()
-      require("user.configs.spectre").config()
-    end,
-  },
+  -- { "Mofiqul/vscode.nvim", config = function()
+  --   require("user.configs.vscode").config()
+  -- end,
+  -- },
+  { "simrat39/symbols-outline.nvim" },
   { "folke/todo-comments.nvim",
     event = "BufRead",
     config = function()
-      require("user.configs.todo-comments")
-    end,
-  },
-  { "stevearc/dressing.nvim",
-    config = function()
-      require("dressing").setup()
-    end,
-  },
-  { "ziontee113/icon-picker.nvim",
-    config = function()
-      require("icon-picker").setup({
-        disable_legacy_commands = true
-      })
+      require("user.configs.todo-comments").config()
     end,
   },
   { "p00f/nvim-ts-rainbow",
   },
+  { "stevearc/dressing.nvim", config = function()
+    require('dressing').setup()
+  end,
+  }
   -- { "", config = function()
   --   require("user.configs.vscode")
   -- end
   -- },
-
 }

@@ -1,6 +1,6 @@
+require "user.plugins"
 require "user.options"
 require "user.theme"
-require "user.keys"
 require "user.commands"
-require "user.plugins"
 require "user.lsp"
+require "user.keys"

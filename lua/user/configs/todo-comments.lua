@@ -1,19 +1,19 @@
 local M = {}
 
 M.config = function()
-  local status_ok, todo_comments = pcall(require, "todo-comments")
-  if not status_ok then
-    return
-  end
+  -- local status_ok, todo_comments = pcall(require, "todo-comments")
+  -- if not status_ok then
+  --   return
+  -- end
 
   local error_red = '#F44747'
   local warning_orange = '#ff8800'
   local info_yellow = '#FFCC66'
   local hint_blue = '#4FC1FF'
   local perf_purple = '#7C3AED'
-  -- local note_green = '#10B981'
+  local note_green = '#10B981'
 
-  todo_comments.setup {
+  require("todo-comments").setup {
     signs = true, -- asdfasdfshow icons in the signs column
     sign_priority = 8, -- sign priority
     -- keywords recognized as todo comments
@@ -24,11 +24,11 @@ M.config = function()
         alt = { "FIXME", "BUG", "FIXIT", "ISSUE" }, -- a set of other keywords that all map to this FIX keywords
         -- signs = false, -- configure signs for some keywords individually
       },
-      TODO = { icon = " ", color = hint_blue },
-      HACK = { icon = " ", color = warning_orange },
-      WARN = { icon = " ", color = warning_orange, alt = { "WARNING", "XXX" } },
+      TODO = { icon = " ", color = warning_orange },
+      HACK = { icon = " ", color = hint_blue },
+      WARN = { icon = " ", color = info_yellow, alt = { "WARNING", "XXX" } },
       PERF = { icon = " ", color = perf_purple, alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
-      NOTE = { icon = " ", color = info_yellow, alt = { "INFO" } },
+      NOTE = { icon = " ", color = note_green, alt = { "INFO" } },
     },
     -- merge_keywords = true, -- when true, custom keywords will be merged with the defaults
     -- highlighting of the line containing the todo comment
