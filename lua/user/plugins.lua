@@ -11,7 +11,7 @@ lvim.builtin.lualine.sections.lualine_z = { "location" }
 lvim.builtin.notify.active = true
 
 lvim.builtin.terminal.active = true
-lvim.builtin.terminal.direction = "horizontal"
+-- lvim.builtin.terminal.direction = "horizontal"
 
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
